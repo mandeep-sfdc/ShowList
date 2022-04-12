@@ -1,18 +1,13 @@
-# Salesforce DX Project: Next Steps
+Flows are vey powerful in SF but it comes with its own modus operandi. 
+One of the shortcomings in the Out of Box flows is that we cannot see a list of records in a single screen. 
+One has to press "Next" to traverse to the next record, which can become a pain in many use cases.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Introducing "ShowList", a custom screen component that can be used to display a list of records in a single view.
 
-## How Do You Plan to Deploy Your Changes?
+<img width="1425" alt="Screenshot 2022-04-12 at 22 25 45" src="https://user-images.githubusercontent.com/97949157/163070674-0c3d9685-98ed-4ec9-aa9f-4a849ad31a4c.png">
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+In this instance we are using it to display a related list on the Account object, but this can be used in many more ways.
 
-## Configure Your Salesforce DX Project
+This is a SFDX project, and has an unmanaged package by the name ShowList which has the intended code in it.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+The code is explained on linked in here 
