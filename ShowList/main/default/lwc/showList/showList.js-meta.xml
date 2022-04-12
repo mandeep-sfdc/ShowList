@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <propertyType name="sObj" extends="SObject" label="Object" description="Select an object." />
+            <property name="sObjectList" label="RECORD (COLLECTION) VARIABLES" type="{sObj[]}"  required="true"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
