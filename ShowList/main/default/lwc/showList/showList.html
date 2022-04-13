@@ -1,8 +1,13 @@
 <template>
-    <lightning-datatable
+    <template if:true={isThereData}>
+        <lightning-datatable
             key-field="Id"
             data={sObjectList}
             columns={cols}
             hide-checkbox-column>
-    </lightning-datatable>    
+        </lightning-datatable>  
+    </template>
+    <template if:false={isThereData}>
+        No Data to display!
+    </template>
 </template>
